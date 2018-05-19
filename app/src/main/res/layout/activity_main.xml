@@ -1,23 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fon42522"
     tools:context="com.example.student.weatherapi.MainActivity">
 
     <Button
+        android:id="@+id/download"
         android:layout_width="wrap_content"
-        android:background="@color/colorPrimary"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:layout_above="@+id/stop"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:background="@color/colorDlyaTexta"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:text="Download"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:clickable="true"
-        android:onClick="onClick"
-        />
+        app:layout_constraintVertical_bias="0.326" />
+
+    <Button
+        android:id="@+id/stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/download"
+        android:background="@color/Red"
+        android:layout_marginBottom="205dp"
+        android:gravity="center"
+        android:onClick="ClickStop"
+        android:text="Stop"
+        tools:layout_editor_absoluteX="148dp" />
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/progressBar"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="@string/loading_status"
+        android:textColor="@color/Black"
+        android:visibility="invisible" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="200dp"
+        android:layout_height="20dp"
+        android:layout_above="@+id/download"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp" />
 
 
-</android.support.constraint.ConstraintLayout>
+</RelativeLayout>

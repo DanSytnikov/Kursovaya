@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Kursovaya.iml" filepath="$PROJECT_DIR$/Kursovaya.iml" />
-      <module fileurl="file://$PROJECT_DIR$/WeatherApi.iml" filepath="$PROJECT_DIR$/WeatherApi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Kursovaya.iml" filepath="$PROJECT_DIR$/.idea/Kursovaya.iml" />
+      <module fileurl="file://D:\Downloads\Kursovaya\Kursovaya.iml" filepath="D:\Downloads\Kursovaya\Kursovaya.iml" />
+      <module fileurl="file://D:\Downloads\Kursovaya\WeatherApi.iml" filepath="D:\Downloads\Kursovaya\WeatherApi.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://D:\Downloads\Kursovaya\app\app.iml" filepath="D:\Downloads\Kursovaya\app\app.iml" />
     </modules>
   </component>
 </project>
